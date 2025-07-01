@@ -1,13 +1,12 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMicroscope, faBolt, faStar } from '@fortawesome/free-solid-svg-icons';
+import SectionHeader from '@/components/ui/SectionHeader';
+
 export default function InnovationQualitySection() {
   return (
     <section className="py-24 bg-gradient-to-br from-gray-50 to-white">
       <div className="container">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-600 mb-4">
-            Innovation & Qualité
-          </h2>
-          <div className="w-24 h-1 bg-secondary-500 mx-auto rounded-full" />
-        </div>
+        <SectionHeader title="Innovation & Qualité" />
         
         <div className="max-w-3xl mx-auto">
           <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 relative overflow-hidden">
@@ -20,15 +19,15 @@ export default function InnovationQualitySection() {
               {/* Icônes illustratives */}
               <div className="grid grid-cols-3 gap-6 text-center">
                 <div className="p-4">
-                  <div className="text-4xl mb-2">🔬</div>
+                  <div className="text-4xl mb-2"><FontAwesomeIcon icon={faMicroscope} size="lg" className="text-primary-600" /></div>
                   <p className="text-sm text-gray-600">Recherche</p>
                 </div>
                 <div className="p-4">
-                  <div className="text-4xl mb-2">⚡</div>
+                  <div className="text-4xl mb-2"><FontAwesomeIcon icon={faBolt} size="lg" className="text-primary-600" /></div>
                   <p className="text-sm text-gray-600">Innovation</p>
                 </div>
                 <div className="p-4">
-                  <div className="text-4xl mb-2">✨</div>
+                  <div className="text-4xl mb-2"><FontAwesomeIcon icon={faStar} size="lg" className="text-primary-600" /></div>
                   <p className="text-sm text-gray-600">Qualité</p>
                 </div>
               </div>

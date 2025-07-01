@@ -21,6 +21,29 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Delta Orthopédie",
   description: "Votre partenaire de confiance en orthopédie",
+  openGraph: {
+    title: 'Delta Orthopédie',
+    description: 'Votre partenaire de confiance en orthopédie',
+    url: 'https://deltaorthopedie.tn',
+    siteName: 'Delta Orthopédie',
+    images: [
+      {
+        url: '/images/logo/foxify_logo.svg',
+        width: 1200,
+        height: 630,
+        alt: 'Delta Orthopédie',
+      },
+    ],
+    locale: 'fr_FR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Delta Orthopédie',
+    description: 'Votre partenaire de confiance en orthopédie',
+    images: ['/images/logo/foxify_logo.svg'],
+    site: '@deltaorthopedie',
+  },
 };
 
 export default function RootLayout({
