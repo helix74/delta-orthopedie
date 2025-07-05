@@ -1,5 +1,6 @@
 import SectionHeader from '@/components/ui/SectionHeader';
 import Card from '@/components/ui/Card';
+import OptimizedImage from '@/components/ui/OptimizedImage';
 
 export default function ExpertiseSection() {
   return (
@@ -18,16 +19,36 @@ export default function ExpertiseSection() {
               </p>
             </div>
 
-            {/* Placeholder pour les photos de l'équipe */}
+            {/* Team photos */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card
-                icon={<span className="w-20 h-20 bg-primary-200 rounded-full flex items-center justify-center mx-auto text-3xl">👨‍⚕️</span>}
+                icon={
+                  <OptimizedImage
+                    src="/images/team/imed-djebbi.jpg"
+                    alt="M. Imed Djebbi - Orthoprothésiste diplômé et certifié ISPO Cat. II"
+                    width={120}
+                    height={120}
+                    className="w-20 h-20 rounded-full object-cover mx-auto"
+                    priority={true}
+                  />
+                }
                 title="M. Imed Djebbi"
+                description="Orthoprothésiste diplômé et certifié ISPO Cat. II"
                 className="bg-gradient-to-br from-primary-50 to-primary-100 border border-primary-100"
               />
               <Card
-                icon={<span className="w-20 h-20 bg-primary-200 rounded-full flex items-center justify-center mx-auto text-3xl">👩‍⚕️</span>}
+                icon={
+                  <OptimizedImage
+                    src="/images/team/cherifa-soltani.jpg"
+                    alt="Mme Cherifa Soltani - Orthoprothésiste diplômée et certifiée ISPO Cat. II"
+                    width={120}
+                    height={120}
+                    className="w-20 h-20 rounded-full object-cover mx-auto"
+                    priority={true}
+                  />
+                }
                 title="Mme Cherifa Soltani"
+                description="Orthoprothésiste diplômée et certifiée ISPO Cat. II"
                 className="bg-gradient-to-br from-primary-50 to-primary-100 border border-primary-100"
               />
             </div>

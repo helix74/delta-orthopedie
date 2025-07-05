@@ -6,8 +6,16 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 export default function HeroSection() {
   return (
-    <section className="relative bg-gradient-to-br from-primary-600 to-primary-800 py-24 overflow-hidden">
-      <div className="absolute inset-0 bg-black/20" /> {/* Overlay pour le contraste */}
+    <section className="relative py-24 overflow-hidden bg-cover bg-center bg-no-repeat" 
+             style={{
+               backgroundImage: 'url(/images/hero/hero-background.jpg)',
+               minHeight: '100vh'
+             }}>
+      {/* Dark overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/30" />
+      
+      {/* Additional overlay for the primary color tint */}
+      <div className="absolute inset-0 bg-primary-600/30" />
       
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
